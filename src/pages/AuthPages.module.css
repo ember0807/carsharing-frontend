@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  padding: 20px;
+}
+
+.form {
+  width: 100%;
+  max-width: 450px;
+  /* Удалили стили для фона, тени и границ, так как они есть в компоненте Card */
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color-light);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+[data-theme='dark'] .title {
+  color: var(--primary-color-dark);
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-light);
+  margin-bottom: 8px;
+}
+
+[data-theme='dark'] .label {
+  color: var(--text-color-dark);
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 8px;
+  background-color: var(--card-bg-color-light);
+  color: var(--text-color-light);
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .input {
+  background-color: var(--card-bg-color-dark);
+  border: 1px solid var(--border-color-dark);
+  color: var(--text-color-dark);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color-light);
+  box-shadow: 0 0 0 3px rgba(65, 90, 119, 0.2);
+}
+
+[data-theme='dark'] .input:focus {
+  border-color: var(--primary-color-dark);
+  box-shadow: 0 0 0 3px rgba(184, 201, 229, 0.2);
+}
+
+.submitButton {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--primary-color-light);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+[data-theme='dark'] .submitButton {
+  background-color: var(--primary-color-dark);
+  color: var(--background-color-dark);
+}
+
+.submitButton:hover {
+  background-color: var(--accent-color-light);
+  transform: translateY(-2px);
+}
+
+[data-theme='dark'] .submitButton:hover {
+  background-color: var(--accent-color-dark);
+}

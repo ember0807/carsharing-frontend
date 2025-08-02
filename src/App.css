@@ -1,0 +1,12 @@
+.main-content {
+  max-width: 1200px; /* Ограничиваем ширину основного контента */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 15px; /* Уменьшаем отступы на мобильных */
+  }
+}

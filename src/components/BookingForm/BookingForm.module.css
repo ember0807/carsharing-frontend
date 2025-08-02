@@ -1,0 +1,138 @@
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-secondary-light);
+  margin-bottom: 10px;
+}
+
+[data-theme='dark'] .formTitle {
+  color: var(--text-secondary-dark);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary-light);
+}
+
+[data-theme='dark'] .label {
+  color: var(--text-primary-dark);
+}
+
+.datePickerInput {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background-color: var(--bg-secondary-light);
+  color: var(--text-primary-light);
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .datePickerInput {
+  background-color: var(--bg-secondary-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--text-primary-dark);
+}
+
+.datePickerInput:focus {
+  outline: none;
+  border-color: var(--accent-light);
+  box-shadow: 0 0 0 3px rgba(119, 141, 169, 0.2);
+}
+
+[data-theme='dark'] .datePickerInput:focus {
+  border-color: var(--accent-dark);
+  box-shadow: 0 0 0 3px rgba(169, 185, 208, 0.2);
+}
+
+.submitButton {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--button-light);
+  color: var(--button-text-light);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+[data-theme='dark'] .submitButton {
+  background-color: var(--button-dark);
+  color: var(--button-text-dark);
+}
+
+.submitButton:hover {
+  background-color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+[data-theme='dark'] .submitButton:hover {
+  background-color: var(--accent-dark);
+}
+
+.tariffContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tariffOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--text-primary-light);
+  cursor: pointer;
+}
+
+[data-theme='dark'] .tariffOption {
+  color: var(--text-primary-dark);
+}
+
+.tariffOption input[type="radio"] {
+  accent-color: var(--button-light);
+}
+
+[data-theme='dark'] .tariffOption input[type="radio"] {
+  accent-color: var(--button-dark);
+}
+.totalCost {
+  padding: 15px;
+  background-color: var(--bg-primary-light);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary-light);
+}
+
+[data-theme='dark'] .totalCost {
+  background-color: var(--bg-primary-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--text-primary-dark);
+}
+
+.totalCost span {
+  color: var(--accent-light);
+  font-size: 20px;
+}
+
+[data-theme='dark'] .totalCost span {
+  color: var(--accent-dark);
+}

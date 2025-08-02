@@ -1,0 +1,23 @@
+:root {
+  /* Светлая тема */
+  --bg-primary-light: #e6e8eb;
+  --bg-secondary-light: #ffffff;
+  --text-primary-light: #1b263b;
+  --text-secondary-light: #415a77;
+  --accent-light: #778da9;
+  --border-light: #e0e0e0;
+  --button-light: #415a77;
+  --button-text-light: #ffffff;
+}
+
+[data-theme='dark'] {
+  /* Тёмная тема */
+  --bg-primary-dark: #000000;
+  --bg-secondary-dark: #121212;
+  --text-primary-dark: #f0f0f0;
+  --text-secondary-dark: #b8c9e5;
+  --accent-dark: #a9b9d0;
+  --border-dark: #333333;
+  --button-dark: #a9b9d0;
+  --button-text-dark: #000000;
+}

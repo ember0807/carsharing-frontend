@@ -1,0 +1,81 @@
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* 60px - высота Header */
+  padding: 20px;
+}
+
+.profileCard {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--bg-secondary-light);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .profileCard {
+  background-color: var(--bg-secondary-dark);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  color: var(--text-primary-light);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+[data-theme='dark'] .title {
+  color: var(--text-primary-dark);
+}
+
+.userInfo {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--text-secondary-light);
+}
+
+[data-theme='dark'] .userInfo {
+  color: var(--text-secondary-dark);
+}
+
+.userInfo p {
+  margin-bottom: 10px;
+}
+
+.userInfo span {
+  font-weight: 600;
+  color: var(--text-primary-light);
+}
+
+[data-theme='dark'] .userInfo span {
+  color: var(--text-primary-dark);
+}
+
+.logoutButton {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--accent-light);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .logoutButton {
+  background-color: var(--accent-dark);
+}
+
+.logoutButton:hover {
+  background-color: var(--accent-hover-light);
+}
+
+[data-theme='dark'] .logoutButton:hover {
+  background-color: var(--accent-hover-dark);
+}
